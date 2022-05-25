@@ -1,0 +1,14 @@
+footer {
+  background-color: $secondary;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  height: 500px;
+}
+
+.footerLink {
+  &:hover {
+    text-decoration: underline;
+  }
+}

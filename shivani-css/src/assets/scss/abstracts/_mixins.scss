@@ -1,0 +1,27 @@
+$spacer: (0, 5px, 10px, 15px); // Add your values here
+
+@each $size in $spacer {
+  .p-#{$size} {
+    padding: #{$size};
+  }
+
+  .pl-#{$size},
+  .px-#{$size} {
+    padding-left: #{$size};
+  }
+
+  .pr-#{$size},
+  .px-#{$size} {
+    padding-right: #{$size};
+  }
+
+  .pt-#{$size},
+  .py-#{$size} {
+    padding-top: #{$size};
+  }
+
+  .pb-#{$size},
+  .py-#{$size} {
+    padding-bottom: #{$size};
+  }
+}

@@ -1,0 +1,11 @@
+header{
+    background-color: $secondary;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+    & div span{
+        margin-right: 5px;
+    }
+}

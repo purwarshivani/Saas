@@ -1,0 +1,156 @@
+.containRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+
+  .border {
+    border: 1px solid #edf1ff;
+  
+    &-left {
+      border-left: 1px solid #edf1ff;
+    }
+  
+    &-right {
+      border-right: 1px solid #edf1ff;
+    }
+    &-top {
+      border-top: 1px solid #edf1ff;
+    }
+  
+    &-bottom {
+      &-primary {
+        border-bottom: 1px solid #edf1ff;
+      }
+      &-white {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+  // .category-grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, auto);
+  // }
+  
+
+  .sideP {
+    padding: 0 15px;
+  }
+  
+
+  .category {
+    &-grid {
+      display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, auto);
+    }
+    &-card {
+     
+      padding: 0px;
+      &-image {
+        width: 420px;
+        overflow: hidden;
+        transition: 100ms ease-in-out all;
+      }
+      &-subtitle {
+        margin-bottom: 15px;
+        text-align: right;
+        color: $body-color;
+      }
+      &-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        margin-top: 15px;
+      }
+      &-imgCon {
+        overflow: hidden;
+        margin-bottom: 1px;
+      }
+  
+      &:hover {
+        > div > img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  
+  .pCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    // width: 420px;
+    overflow: hidden;
+    &-image {
+      width: 100%;
+      overflow: hidden;
+      transition: 300ms ease-in-out all;
+    }
+  
+    &-imgCon {
+      overflow: hidden;
+    }
+  
+    &-footer {
+      padding: 0.75rem 1.25rem;
+    }
+  
+    &-price {
+      font-size: 1rem;
+      color: $dark;
+      &-striked {
+        color: #6c757d;
+        text-decoration: line-through;
+      }
+    }
+    &-name {
+      font-size: 1rem;
+    }
+    &:hover {
+      > div > img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+
+
+  .font-weight {
+    &-bold {
+      font-weight: 600;
+    }
+    &-semi-bold {
+      font-weight: 500;
+    }
+  }
+  
+  .text {
+    &-black {
+      color: $dark;
+    }
+    &-primary {
+      color: $primary;
+    }
+    &-white {
+      color: white;
+    }
+    &-center {
+      text-align: center;
+    }
+    &-right {
+      text-align: right;
+    }
+    &-left {
+      text-align: left;
+    }
+    &-uppercase {
+      text-transform: uppercase;
+    }
+  }

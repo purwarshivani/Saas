@@ -1,0 +1,13 @@
+.vendor {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+  }
+  &-image {
+    width: 100%;
+    height: auto;
+  }
+  &-item {
+  }
+}
